@@ -27,8 +27,8 @@ public class LargestFormedNumber {
 
         Integer[] intArray = {25,55,2,42,4};
         Arrays.sort(intArray, (n1, n2) -> {
-            Integer c1 = Integer.parseInt(n1.toString() + n2.toString());
-            Integer c2 = Integer.parseInt(n2.toString() + n1.toString());
+            int c1 = Integer.parseInt(n1.toString() + n2.toString());
+            int c2 = Integer.parseInt(n2.toString() + n1.toString());
             return Integer.compare(c2, c1);
         });
 
