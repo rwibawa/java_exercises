@@ -130,9 +130,7 @@ import java.util.*;
  * If you need more classes, simply define them inline.
 60
  */
-61
-        ​
-        62
+
 /**
  *
  class AutoLoanService {
@@ -220,19 +218,6 @@ import java.util.*;
  """
 
  */
-
-class Solution {
-    public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<String>();
-        strings.add("Hello, World!");
-        strings.add("Welcome to CoderPad.");
-        strings.add("This pad is running Java 8.");
-
-        for (String string : strings) {
-            System.out.println(string);
-        }
-    }
-}
 
 public class CreditKarma {
     public static void main(String[] args) {

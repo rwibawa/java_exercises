@@ -9,7 +9,7 @@ public class FindMiddle<T> {
     }
 
     public static void main(String[] args) {
-        FindMiddle solution = new FindMiddle<>();
+        FindMiddle<Integer> solution = new FindMiddle<>();
         Node<Integer> head = null;
         Node<Integer> pointer = null;
 
