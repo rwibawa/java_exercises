@@ -36,6 +36,6 @@ public class WelformedParentheses {
             }
         }
 
-        return true;
+        return stack.isEmpty();
     }
 }
