@@ -21,3 +21,21 @@ getting selected is directly proportional to its population.
  
 ## 6. ReverseString
 Write a method to reverse a string.
+
+## Design Pattern
+### 1. Creational Pattern
+#### 1. Singleton
+ensure a class has only one instance, and provide a global point of access to it.
+
+#### 2. Factory
+create an instance of several derived methods.
+
+#### 3. Builder
+separate object construction from its representation.
+
+#### 4. Prototype
+a fully initialized instance to be copied or cloned.
+
+
+### 2. Structural Pattern
+### 3. Behavioral
