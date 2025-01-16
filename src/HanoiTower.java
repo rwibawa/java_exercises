@@ -16,7 +16,7 @@ public class HanoiTower {
         HanoiTower tower2 = new HanoiTower(2);
         HanoiTower tower3 = new HanoiTower(3);
 
-        int n = 2;
+        int n = 3;
         for (int i = n; i > 0; i--) {
             tower1.add(i);
         }
@@ -36,7 +36,7 @@ public class HanoiTower {
 
     public void add(int diskIndex)
     {
-        if (stack.size() != 0 && stack.peek() <= diskIndex)
+        if (!stack.isEmpty() && stack.peek() <= diskIndex)
         {
             System.out.println("Error add disk["+diskIndex+"] to tower["+index+"]!");
         }
@@ -49,12 +49,13 @@ public class HanoiTower {
 
     public void moveDisks(int numberOfDisks, HanoiTower destination, HanoiTower buffer)
     {
-        if (numberOfDisks > 0)
-        {
-            moveDisks(numberOfDisks - 1, buffer, destination);
-            moveTopTo(destination);
-            buffer.moveDisks(numberOfDisks - 1, destination, this);
+        if (numberOfDisks < 1) {
+            return;
         }
+
+        moveDisks(numberOfDisks - 1, buffer, destination);
+        moveTopTo(destination);
+        buffer.moveDisks(numberOfDisks - 1, destination, this);
     }
 
     private void moveTopTo(HanoiTower destination)
