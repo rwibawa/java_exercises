@@ -80,7 +80,7 @@
     c = number of columns
     w = length of the word
 */
-
+/*
 import java.util.*;
 import javafx.util.Pair;
 
